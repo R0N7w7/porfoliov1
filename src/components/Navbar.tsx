@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { IoMdMenu } from "react-icons/io"
 import { PiBracketsAngleBold } from "react-icons/pi"
-import { MobileMenu } from "./MobileMenu"
 
 const Navbar = () => {
     return (
@@ -12,7 +11,6 @@ const Navbar = () => {
             <div className="flex items-center justify-end rounded-md md:hidden">
                 <IoMdMenu size={35} className="fill-white" />
             </div>
-            <MobileMenu />
             <ul className="text-white gap-8 hidden md:flex w-full items-center justify-end lg:text-lg">
                 <li className="hover:underline underline-offset-4 transition-all cursor-pointer"><Link href="#about">Sobre mí</Link></li>
                 <li className="hover:underline underline-offset-4 transition-all cursor-pointer"><Link href="#experience">Experiencia</Link></li>
